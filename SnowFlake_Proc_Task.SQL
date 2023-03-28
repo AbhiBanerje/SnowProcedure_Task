@@ -103,7 +103,7 @@ def x(session):
         #success email notifcation
         session.call('system$send_email',
         'EMAIL_NOTIFICATION_INTEGRATION',
-        'abhisekhbanerjee@gmail.com',
+        'zzzzzzzz@gmail.com',
         'Success-Snowflake Task Notifcation: TSK_Load_DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT load Task',
         Inserted_rows)
     except Exception as e:
@@ -112,7 +112,7 @@ def x(session):
         fin_bod='Insert to DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT failed. Check Task History for more details.\n \n'+ body
         session.call('system$send_email',
         'EMAIL_NOTIFICATION_INTEGRATION',
-        'abhisekhbanerjee@gmail.com',
+        'zzzzz@gmail.com',
         'Failure-Snowflake Task Notifcation: TSK_Load_DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT load Task',
         fin_bod)
 $$
@@ -142,7 +142,7 @@ def x(session):
         #success email notifcation
         session.call('system$send_email',
         'EMAIL_NOTIFICATION_INTEGRATION',
-        'abhisekhbanerjee@gmail.com',
+        'zzzz@gmail.com',
         'Success-Snowflake Task Notifcation: TSK_Load_DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT load Task',
         Inserted_rows)
     except Exception as e:
@@ -151,7 +151,7 @@ def x(session):
         fin_bod='Insert to DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT failed. Check Task History for more details.\n \n'+ body
         session.call('system$send_email',
         'EMAIL_NOTIFICATION_INTEGRATION',
-        'abhisekhbanerjee@gmail.com',
+        'zzzzz@gmail.com',
         'Failure-Snowflake Task Notifcation: TSK_Load_DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT load Task',
         fin_bod)
 $$;
