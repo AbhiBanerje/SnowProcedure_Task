@@ -62,14 +62,14 @@ or replace TABLE DEMO_DB.PUBLIC.TBL_DOT_SELL_THROUGH_DISTRIBUTOR_CODE_SNAPSHOT (
 Create OR REPLACE notification integration Email_Notification_Integration
 type=email
 enabled=true
-allowed_recipients=('abhisekhbanerjee@gmail.com');
+allowed_recipients=('zzzz@gmail.com');
 
 ----** Below code Sends email using SYSTEM$SEND_EMAIL function. This code allows snowflake to push email notification to ay verified user in Snowflake after Failure or Success.
 
 --Returns True if email notification is send.
 Call SYSTEM$SEND_EMAIL(
     'EMAIL_NOTIFICATION_INTEGRATION',
-    'abhisekhbanerjee@gmail.com' ,
+    'zzzzz@gmail.com' ,
     'Email Alert: Task has finished.',
     'Task has successfully finished on ' || CURRENT_ACCOUNT() || ' account which is deployed on' || CURRENT_REGION() || 'region at' || CURRENT_TIMESTAMP()
 );
